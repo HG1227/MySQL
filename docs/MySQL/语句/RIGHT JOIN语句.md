@@ -24,11 +24,11 @@ SELECT <字段名> FROM <表1> RIGHT OUTER JOIN <表2> <ON子句>
 
 “右连接”，表1右连接表2，以右为主，表示以表2为主，关联查询表1的数据，查出表2所有数据以及表1和表2有交集的数据
 
-![image-20200816213915138](C:\Users\Hu\AppData\Roaming\Typora\typora-user-images\image-20200816213915138.png)
+<img src=".\img\image-20200816213915138.png" alt="image-20200816213915138" style="zoom:80%;" />
 
 从score表中找出，没有在subjects表中出现过的记录
 
-![image-20200816213958798](C:\Users\Hu\AppData\Roaming\Typora\typora-user-images\image-20200816213958798.png)
+<img src=".\img\image-20200816213958798.png" alt="image-20200816213958798" style="zoom:80%;" />
 
 例 2
 

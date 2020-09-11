@@ -2,7 +2,7 @@
 
 ## AG() 函数
 
-`LAG()`函数是一个[窗口函数](https://www.begtut.com/mysql/mysql-window-functions.html)，允许您回顾多行并从当前行访问行的数据。`LAG()`函数从同一结果集中的当前行访问上一行的数据。
+`LAG()`函数是一个[窗口函数](https://www.begtut.com/mysql/mysql-window-functions.html)，返回分区中当前行之前的第N行的值。 如果不存在前一行，则返回NULL。
 
 ```sql
 LAG(<expression>[,offset[, default_value]]) OVER (
@@ -94,7 +94,7 @@ FROM
 
 ###  LEAD() 函数概述
 
-`LEAD()`函数是一个[窗口函数](https://www.begtut.com/mysql/mysql-window-functions.html)，允许您向前看多行并从当前行访问行的数据。
+`LEAD()`函数是一个[窗口函数](https://www.begtut.com/mysql/mysql-window-functions.html)，返回分区中当前行之后的第N行的值。 如果不存在后续行，则返回NULL。
 
 与`LAG()`函数类似，`LEAD()`函数对于计算同一结果集中当前行和后续行之间的差异非常有用。
 

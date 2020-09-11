@@ -46,3 +46,8 @@ mysql> SHOW CREATE DATABASE test_db;
 1 row in set (0.00 sec)
 ```
 
+
+
+## alter 修改表
+
+添加索引

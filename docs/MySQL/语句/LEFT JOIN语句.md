@@ -1,6 +1,6 @@
 # LEFT JOIN语句
 
-### 左连接
+## 左连接
 
 左外连接又称为左连接，使用` LEFT OUTER JOIN `关键字连接两个表，并使用 `ON` 子句来设置连接条件。
 
@@ -29,3 +29,30 @@ LEFT OUTER JOIN <表2>
 
 <img src=".\img\image-20200816213624600.png" alt="image-20200816213624600" style="zoom:80%;" />
 
+
+
+## 案例
+
+```sql
+select *
+from pd
+where user_id=1;
+```
+
+<img src=".\img\image-20200909095244269.png" alt="image-20200909095244269" style="zoom:80%;" />
+
+```sql
+select *
+from (select convert(log_time, date) day1,
+             user_id,
+             oprt_type
+      from pd) a
+         left join (select convert(log_time, date) day2,
+                           user_id,
+                           oprt_type
+                    from pd) b
+                   on b.user_id = a.user_id
+where a.user_id=1;
+```
+
+<img src=".\img\image-20200909095639712.png" alt="image-20200909095639712" style="zoom:80%;" />

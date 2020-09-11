@@ -49,3 +49,9 @@ SELECT [ALL | DISTINCT]
 ```
 
 如果不指定，默认值为`ALL`。
+
+
+
+参考
+
+- <a href="https://www.cnblogs.com/rainman/archive/2013/05/03/3058451.html" target="">SQL中distinct的用法</a> 

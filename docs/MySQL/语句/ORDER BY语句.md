@@ -64,3 +64,4 @@ sql = "select *  from  user  where Putout=true  order by time  desc"  //按最�
 sql = "select * from  user  where Putout=true  order by time   asc"   //按早时间来排序
 ```
 
+可以把时间理解成 时间是有小到大增加的，当成普通的数字。
